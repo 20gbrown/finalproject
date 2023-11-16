@@ -1,8 +1,8 @@
-// src/index.js
+// index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from '../components/App';
+import './styles/style.css';
 
-require('dotenv').config();
-const config = require('./config/config');
+ReactDOM.render(<App />, document.getElementById('root'));
 
-const mongodbUri = process.env.MONGODB_URI || config.database.uri;
-
-// Now you can use 'mongodbUri' to connect to your Azure Cosmos DB MongoDB instance.
