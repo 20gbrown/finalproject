@@ -1,0 +1,111 @@
+{
+    "Races": {
+      "Dragonborn": {
+        "Description": "Proud and honorable dragon-like humanoids.",
+        "Traits": [
+          "Ability Score Increase: Strength +2, Charisma +1",
+          "Draconic Ancestry: Breath weapon and damage resistance based on dragon type.",
+          "Breath Weapon: Exhale destructive energy in a 5 by 30 ft. line."
+        ],
+        "Image": "./components/data/4210_Final_Project/DragonBorn-5e.png"
+      },
+      "Dwarf": {
+        "Description": "Short and stout humanoids with a strong affinity for craftsmanship.",
+        "Traits": [
+          "Ability Score Increase: Constitution +2",
+          "Dwarven Resilience: Advantage on saving throws against poison, resistance to poison damage.",
+          "Stonecunning: Proficient in History checks related to stonework."
+        ],
+        "Subraces": {
+          "Hill Dwarf": {
+            "Description": "Hill dwarves are known for their hardiness and endurance.",
+            "Traits": [
+              "Ability Score Increase: Wisdom +1",
+              "Dwarven Toughness: Bonus hit point maximum and additional hit points per level."
+            ],
+            "Image": "./Dwarf-5e.png"
+          }
+        }
+      },
+      "Gnome": {
+        "Description": "Small, inventive, and curious humanoids with a love for tinkering.",
+        "Traits": [
+          "Ability Score Increase: Intelligence +2",
+          "Gnome Cunning: Advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
+        ],
+        "Subraces": {
+          "Rock Gnome": {
+            "Description": "Rock gnomes are known for their technological aptitude.",
+            "Traits": [
+              "Ability Score Increase: Constitution +1",
+              "Artificer’s Lore: Bonus to History checks related to magic items and devices.",
+              "Tinker: Proficient with artisan’s tools (tinker’s tools) and can create small clockwork devices."
+            ],
+            "Image": "./Gnome-5e.png"
+          }
+        }
+      },
+      "Half-Elf": {
+        "Description": "A mix of human and elf heritage, possessing qualities of both.",
+        "Traits": [
+          "Ability Score Increase: Charisma +2, two other ability scores of your choice +1",
+          "Fey Ancestry: Advantage on saving throws against being charmed, can't be put to sleep.",
+          "Skill Versatility: Proficiency in two skills of your choice."
+        ],
+        "Image": "./Half-elf_5e.png"
+      },
+      "Half-Orc": {
+        "Description": "A hybrid of human and orc, combining strength and endurance.",
+        "Traits": [
+          "Ability Score Increase: Strength +2, Constitution +1",
+          "Menacing: Proficiency in the Intimidation skill.",
+          "Relentless Endurance: Can drop to 1 hit point instead of being reduced to 0 hit points."
+        ],
+        "Image": "./Half-orc-5e.png"
+      },
+      "Halfling": {
+        "Description": "Small, nimble, and cheerful humanoids with a love for peace and comfort.",
+        "Traits": [
+          "Ability Score Increase: Dexterity +2",
+          "Lucky: Reroll a 1 on an attack roll, ability check, or saving throw.",
+          "Halfling Nimbleness: Can move through the space of any creature larger."
+        ],
+        "Subraces": {
+          "Lightfoot": {
+            "Description": "Lightfoot halflings are more affable and prone to wanderlust.",
+            "Traits": [
+              "Ability Score Increase: Charisma +1",
+              "Naturally Stealthy: Can attempt to hide even when obscured by a creature at least one size larger."
+            ],
+            "Image": "./Halfling-5e.png"
+          }
+        }
+      },
+      "Human": {
+        "Description": "Adaptable and ambitious humanoids with a diverse range of abilities.",
+        "Traits": [
+          "Ability Score Increase: All ability scores +1"
+        ],
+        "Image": "./Human-5e.png"
+      },
+      "Sun Elf": {
+        "Description": "High elves with a special affinity for the sun and magic.",
+        "Traits": [
+          "Ability Score Increase: Intelligence +1",
+          "Elf Weapon Training: Proficiency with longsword, shortsword, shortbow, and longbow.",
+          "Cantrip: Know one cantrip from the wizard spell list."
+        ],
+        "Image": "./Sun_elf-5e.png"
+      },
+      "Tiefling": {
+        "Description": "Descendants of infernal beings, bearing demonic features.",
+        "Traits": [
+          "Ability Score Increase: Intelligence +1, Charisma +2",
+          "Hellish Resistance: Resistance to fire damage.",
+          "Infernal Legacy: Know the thaumaturgy cantrip and can cast hellish rebuke and darkness once per day."
+        ],
+        "Image": "./Tiefling_5e.png"
+      }
+    }
+  }
+  

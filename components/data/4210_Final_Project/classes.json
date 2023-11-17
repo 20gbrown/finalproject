@@ -1,0 +1,53 @@
+{
+    "classes": {
+      "barbarian": {
+        "name": "Barbarian",
+        "description": "Masters of rage, the barbarians unleash their primal fury on the battlefield."
+      },
+      "bard": {
+        "name": "Bard",
+        "description": "Versatile performers and spellcasters, bards weave magic through their music and charm."
+      },
+      "cleric": {
+        "name": "Cleric",
+        "description": "Divine servants and healers, clerics draw power from their chosen deity to aid allies and smite foes."
+      },
+      "druid": {
+        "name": "Druid",
+        "description": "Guardians of nature, druids commune with the elements and shape-shift into powerful beasts."
+      },
+      "fighter": {
+        "name": "Fighter",
+        "description": "Masters of combat, fighters excel in martial prowess and adaptability."
+      },
+      "monk": {
+        "name": "Monk",
+        "description": "Disciplined warriors, monks harness their inner energy for unparalleled speed and agility."
+      },
+      "paladin": {
+        "name": "Paladin",
+        "description": "Holy knights, paladins combine martial skill with divine magic to uphold justice."
+      },
+      "ranger": {
+        "name": "Ranger",
+        "description": "Skilled trackers and survivalists, rangers excel in both archery and wilderness lore."
+      },
+      "rogue": {
+        "name": "Rogue",
+        "description": "Masters of stealth and cunning, rogues are skilled infiltrators and deadly assassins."
+      },
+      "sorcerer": {
+        "name": "Sorcerer",
+        "description": "Innate spellcasters, sorcerers wield magical power flowing through their bloodline."
+      },
+      "warlock": {
+        "name": "Warlock",
+        "description": "Pact-bound spellcasters, warlocks forge mysterious deals for otherworldly powers."
+      },
+      "wizard": {
+        "name": "Wizard",
+        "description": "Arcane scholars, wizards study ancient tomes to command the forces of magic."
+      }
+    }
+  }
+  

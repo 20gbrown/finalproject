@@ -1,9 +1,16 @@
 // utils/quizData.js
 const classMapping = {
-    a: { Barbarian: 3, Fighter: 1, Monk: 1, Rogue: 0, Sorcerer: 1, Cleric: 1, Ranger: 1},
-    b: { Bard: 2, Monk: 2, Paladin: 2, Sorcerer: 1, Wizard: 3, Fighter: 1, Warlock: 2, Cleric: 2, Druid: 3},
-    c: { Rogue: 3, Ranger: 2, Wizard: 1, Barbarian: 0, Warlock: 1, Sorcerer: 1, Druid: 2},
-  };
+  a: {
+    Barbarian: 3, Fighter: 2, Monk: 2, Rogue: 1, Sorcerer: 2, Cleric: 1, Ranger: 1, Bard: 1, Paladin: 1, Wizard: 0, Warlock: 0, Druid: 0,
+  },
+  b: {
+    Bard: 3, Monk: 2, Paladin: 3, Sorcerer: 2, Wizard: 3, Fighter: 2, Warlock: 2, Cleric: 2, Druid: 3, Barbarian: 0, Rogue: 0, Ranger: 0,
+  },
+  c: {
+    Rogue: 3, Ranger: 3, Wizard: 2, Barbarian: 0, Warlock: 1, Sorcerer: 1, Druid: 2, Bard: 1, Paladin: 0, Fighter: 0, Monk: 0,
+  },
+};
+
 
 const QuizBank = [
     {
@@ -76,6 +83,42 @@ const QuizBank = [
         { option: 'a', text: 'Lead the charge into danger.' },
         { option: 'b', text: 'Offer strategic advice and tactics.' },
         { option: 'c', text: 'Scout ahead and handle tasks discreetly.' },
+      ],
+    },
+    {
+      question: "When facing a dragon, you...",
+      id: 8,
+      answers: [
+        { option: 'a', text: 'Charge at it with your weapon drawn, ready for a legendary battle!' },
+        { option: 'b', text: 'Assess the situation and look for its weak points before engaging.' },
+        { option: 'c', text: 'Try to sneak past it, avoiding direct confrontation.' },
+      ],
+    },
+    {
+      question: "Your preferred magical item would be...",
+      id: 9,
+      answers: [
+        { option: 'a', text: 'A powerful enchanted sword that glows with mystical energy.' },
+        { option: 'b', text: 'A versatile staff that can cast a variety of spells.' },
+        { option: 'c', text: 'A cloak of invisibility for those tricky situations.' },
+      ],
+    },
+    {
+      question: "What kind of companion would you choose for your adventures?",
+      id: 10,
+      answers: [
+        { option: 'a', text: 'A loyal and fearsome war hound.' },
+        { option: 'b', text: 'A wise and ancient owl with magical insights.' },
+        { option: 'c', text: 'A mischievous and nimble fox, perfect for stealthy missions.' },
+      ],
+    },
+    {
+      question: "Your preferred method of transportation is...",
+      id: 11,
+      answers: [
+        { option: 'a', text: 'A majestic griffin, soaring through the skies.' },
+        { option: 'b', text: 'A magical teleportation spell for instant travel.' },
+        { option: 'c', text: 'A swift and silent elven steed for traversing the wilderness.' },
       ],
     },
   ];
