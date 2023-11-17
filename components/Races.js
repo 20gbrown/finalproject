@@ -1,12 +1,15 @@
 import React from 'react';
 import racesData from '../components/data/4210_Final_Project/races.json';
+import RaceImages from './RaceImages';
 
 const Races = () => {
-  const renderRace = (raceName, raceInfo) => {
-    return (
-      <div key={raceName}>
-        <h2>{raceName}</h2>
-        <img src={raceInfo.Image} alt={`${raceName} Race`} />
+    const renderRace = (raceName, raceInfo) => {
+      return (
+        <div key={raceName}>
+          <h2>{raceName}</h2>
+          {raceInfo.Image && (
+            <Image src={require(`../public/img/${raceInfo.Image}`).default} alt={`${raceName} Race`} />
+          )}
         <p>{raceInfo.Description}</p>
         <h3>Traits</h3>
         <ul>
@@ -22,7 +25,9 @@ const Races = () => {
               return (
                 <div key={subraceName}>
                   <h4>{subraceName}</h4>
-                  <img src={subraceInfo.Image} alt={`${subraceName} Subrace`} />
+                  {subraceInfo.Image && (
+                    <img src={require(`../public/img/${subraceInfo.Image}`)} alt={`${subraceName} Subrace`} />
+                  )}
                   <p>{subraceInfo.Description}</p>
                   <h5>Traits</h5>
                   <ul>
@@ -38,6 +43,7 @@ const Races = () => {
       </div>
     );
   };
+  
 
   return (
     <div>

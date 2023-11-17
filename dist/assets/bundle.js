@@ -97,6 +97,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./components/RaceImages.js":
+/*!**********************************!*\
+  !*** ./components/RaceImages.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n// RaceImages.js\n\nvar RaceImages = function RaceImages(_ref) {\n  var src = _ref.src,\n    alt = _ref.alt;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n    src: src,\n    alt: alt\n  });\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RaceImages);\n\n//# sourceURL=webpack://final-project-20gbrown/./components/RaceImages.js?");
+
+/***/ }),
+
 /***/ "./components/Races.js":
 /*!*****************************!*\
   !*** ./components/Races.js ***!
@@ -104,7 +115,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_data_4210_Final_Project_races_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/data/4210_Final_Project/races.json */ \"./components/data/4210_Final_Project/races.json\");\n\n\nvar Races = function Races() {\n  var renderRace = function renderRace(raceName, raceInfo) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      key: raceName\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h2\", null, raceName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n      src: raceInfo.Image,\n      alt: \"\".concat(raceName, \" Race\")\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, raceInfo.Description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h3\", null, \"Traits\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", null, raceInfo.Traits.map(function (trait, index) {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n        key: index\n      }, trait);\n    })), raceInfo.Subraces && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h3\", null, \"Subraces\"), Object.keys(raceInfo.Subraces).map(function (subraceName) {\n      var subraceInfo = raceInfo.Subraces[subraceName];\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n        key: subraceName\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h4\", null, subraceName), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n        src: subraceInfo.Image,\n        alt: \"\".concat(subraceName, \" Subrace\")\n      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, subraceInfo.Description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h5\", null, \"Traits\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", null, subraceInfo.Traits.map(function (trait, index) {\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n          key: index\n        }, trait);\n      })));\n    })));\n  };\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h1\", null, \"Races\"), Object.keys(_components_data_4210_Final_Project_races_json__WEBPACK_IMPORTED_MODULE_1__.Races).map(function (raceName) {\n    var raceInfo = _components_data_4210_Final_Project_races_json__WEBPACK_IMPORTED_MODULE_1__.Races[raceName];\n    return renderRace(raceName, raceInfo);\n  }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Races);\n\n//# sourceURL=webpack://final-project-20gbrown/./components/Races.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_data_4210_Final_Project_races_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/data/4210_Final_Project/races.json */ \"./components/data/4210_Final_Project/races.json\");\n/* harmony import */ var _RaceImages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RaceImages */ \"./components/RaceImages.js\");\n\n\n\nvar Races = function Races() {\n  var renderRace = function renderRace(raceName, raceInfo) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      key: raceName\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h2\", null, raceName), raceInfo.Image && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Image, {\n      src: __webpack_require__(\"./public/img sync recursive ^\\\\.\\\\/.*$\")(\"./\".concat(raceInfo.Image))[\"default\"],\n      alt: \"\".concat(raceName, \" Race\")\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, raceInfo.Description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h3\", null, \"Traits\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", null, raceInfo.Traits.map(function (trait, index) {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n        key: index\n      }, trait);\n    })), raceInfo.Subraces && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h3\", null, \"Subraces\"), Object.keys(raceInfo.Subraces).map(function (subraceName) {\n      var subraceInfo = raceInfo.Subraces[subraceName];\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n        key: subraceName\n      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h4\", null, subraceName), subraceInfo.Image && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"img\", {\n        src: __webpack_require__(\"./public/img sync recursive ^\\\\.\\\\/.*$\")(\"./\".concat(subraceInfo.Image)),\n        alt: \"\".concat(subraceName, \" Subrace\")\n      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"p\", null, subraceInfo.Description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h5\", null, \"Traits\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", null, subraceInfo.Traits.map(function (trait, index) {\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n          key: index\n        }, trait);\n      })));\n    })));\n  };\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h1\", null, \"Races\"), Object.keys(_components_data_4210_Final_Project_races_json__WEBPACK_IMPORTED_MODULE_1__.Races).map(function (raceName) {\n    var raceInfo = _components_data_4210_Final_Project_races_json__WEBPACK_IMPORTED_MODULE_1__.Races[raceName];\n    return renderRace(raceName, raceInfo);\n  }));\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Races);\n\n//# sourceURL=webpack://final-project-20gbrown/./components/Races.js?");
 
 /***/ }),
 
@@ -337,6 +348,216 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./public/img/Barbarian.png":
+/*!**********************************!*\
+  !*** ./public/img/Barbarian.png ***!
+  \**********************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Barbarian.png?");
+
+/***/ }),
+
+/***/ "./public/img/Bard.png":
+/*!*****************************!*\
+  !*** ./public/img/Bard.png ***!
+  \*****************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Bard.png?");
+
+/***/ }),
+
+/***/ "./public/img/Cleric.png":
+/*!*******************************!*\
+  !*** ./public/img/Cleric.png ***!
+  \*******************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Cleric.png?");
+
+/***/ }),
+
+/***/ "./public/img/Druid.png":
+/*!******************************!*\
+  !*** ./public/img/Druid.png ***!
+  \******************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Druid.png?");
+
+/***/ }),
+
+/***/ "./public/img/Dwarf-5e.png":
+/*!*********************************!*\
+  !*** ./public/img/Dwarf-5e.png ***!
+  \*********************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Dwarf-5e.png?");
+
+/***/ }),
+
+/***/ "./public/img/Fighter.png":
+/*!********************************!*\
+  !*** ./public/img/Fighter.png ***!
+  \********************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Fighter.png?");
+
+/***/ }),
+
+/***/ "./public/img/Gnome-5e.png":
+/*!*********************************!*\
+  !*** ./public/img/Gnome-5e.png ***!
+  \*********************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Gnome-5e.png?");
+
+/***/ }),
+
+/***/ "./public/img/Half-elf_5e.png":
+/*!************************************!*\
+  !*** ./public/img/Half-elf_5e.png ***!
+  \************************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Half-elf_5e.png?");
+
+/***/ }),
+
+/***/ "./public/img/Half-orc-5e.png":
+/*!************************************!*\
+  !*** ./public/img/Half-orc-5e.png ***!
+  \************************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Half-orc-5e.png?");
+
+/***/ }),
+
+/***/ "./public/img/Halfling-5e.png":
+/*!************************************!*\
+  !*** ./public/img/Halfling-5e.png ***!
+  \************************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Halfling-5e.png?");
+
+/***/ }),
+
+/***/ "./public/img/Human-5e.png":
+/*!*********************************!*\
+  !*** ./public/img/Human-5e.png ***!
+  \*********************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Human-5e.png?");
+
+/***/ }),
+
+/***/ "./public/img/Monk.png":
+/*!*****************************!*\
+  !*** ./public/img/Monk.png ***!
+  \*****************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Monk.png?");
+
+/***/ }),
+
+/***/ "./public/img/Paladin.png":
+/*!********************************!*\
+  !*** ./public/img/Paladin.png ***!
+  \********************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Paladin.png?");
+
+/***/ }),
+
+/***/ "./public/img/Ranger.png":
+/*!*******************************!*\
+  !*** ./public/img/Ranger.png ***!
+  \*******************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Ranger.png?");
+
+/***/ }),
+
+/***/ "./public/img/Rouge.png":
+/*!******************************!*\
+  !*** ./public/img/Rouge.png ***!
+  \******************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Rouge.png?");
+
+/***/ }),
+
+/***/ "./public/img/Sorcerer.png":
+/*!*********************************!*\
+  !*** ./public/img/Sorcerer.png ***!
+  \*********************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Sorcerer.png?");
+
+/***/ }),
+
+/***/ "./public/img/Sun_elf-5e.png":
+/*!***********************************!*\
+  !*** ./public/img/Sun_elf-5e.png ***!
+  \***********************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Sun_elf-5e.png?");
+
+/***/ }),
+
+/***/ "./public/img/Tiefling_5e.png":
+/*!************************************!*\
+  !*** ./public/img/Tiefling_5e.png ***!
+  \************************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Tiefling_5e.png?");
+
+/***/ }),
+
+/***/ "./public/img/Warlock.png":
+/*!********************************!*\
+  !*** ./public/img/Warlock.png ***!
+  \********************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Warlock.png?");
+
+/***/ }),
+
+/***/ "./public/img/Wizard.png":
+/*!*******************************!*\
+  !*** ./public/img/Wizard.png ***!
+  \*******************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected character '�' (1:0)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n(Source code omitted for this binary file)\");\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/Wizard.png?");
+
+/***/ }),
+
+/***/ "./public/img sync recursive ^\\.\\/.*$":
+/*!***********************************!*\
+  !*** ./public/img/ sync ^\.\/.*$ ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var map = {\n\t\"./Barbarian.png\": \"./public/img/Barbarian.png\",\n\t\"./Bard.png\": \"./public/img/Bard.png\",\n\t\"./Cleric.png\": \"./public/img/Cleric.png\",\n\t\"./Druid.png\": \"./public/img/Druid.png\",\n\t\"./Dwarf-5e.png\": \"./public/img/Dwarf-5e.png\",\n\t\"./Fighter.png\": \"./public/img/Fighter.png\",\n\t\"./Gnome-5e.png\": \"./public/img/Gnome-5e.png\",\n\t\"./Half-elf_5e.png\": \"./public/img/Half-elf_5e.png\",\n\t\"./Half-orc-5e.png\": \"./public/img/Half-orc-5e.png\",\n\t\"./Halfling-5e.png\": \"./public/img/Halfling-5e.png\",\n\t\"./Human-5e.png\": \"./public/img/Human-5e.png\",\n\t\"./Monk.png\": \"./public/img/Monk.png\",\n\t\"./Paladin.png\": \"./public/img/Paladin.png\",\n\t\"./Ranger.png\": \"./public/img/Ranger.png\",\n\t\"./Rouge.png\": \"./public/img/Rouge.png\",\n\t\"./Sorcerer.png\": \"./public/img/Sorcerer.png\",\n\t\"./Sun_elf-5e.png\": \"./public/img/Sun_elf-5e.png\",\n\t\"./Tiefling_5e.png\": \"./public/img/Tiefling_5e.png\",\n\t\"./Warlock.png\": \"./public/img/Warlock.png\",\n\t\"./Wizard.png\": \"./public/img/Wizard.png\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./public/img sync recursive ^\\\\.\\\\/.*$\";\n\n//# sourceURL=webpack://final-project-20gbrown/./public/img/_sync_^\\.\\/.*$?");
+
+/***/ }),
+
 /***/ "./components/data/4210_Final_Project/00 legal.json":
 /*!**********************************************************!*\
   !*** ./components/data/4210_Final_Project/00 legal.json ***!
@@ -366,7 +587,7 @@ eval("module.exports = JSON.parse('{\"classes\":{\"barbarian\":{\"name\":\"Barba
 /***/ ((module) => {
 
 "use strict";
-eval("module.exports = JSON.parse('{\"Races\":{\"Dragonborn\":{\"Description\":\"Proud and honorable dragon-like humanoids.\",\"Traits\":[\"Ability Score Increase: Strength +2, Charisma +1\",\"Draconic Ancestry: Breath weapon and damage resistance based on dragon type.\",\"Breath Weapon: Exhale destructive energy in a 5 by 30 ft. line.\"],\"Image\":\"./components/data/4210_Final_Project/DragonBorn-5e.png\"},\"Dwarf\":{\"Description\":\"Short and stout humanoids with a strong affinity for craftsmanship.\",\"Traits\":[\"Ability Score Increase: Constitution +2\",\"Dwarven Resilience: Advantage on saving throws against poison, resistance to poison damage.\",\"Stonecunning: Proficient in History checks related to stonework.\"],\"Subraces\":{\"Hill Dwarf\":{\"Description\":\"Hill dwarves are known for their hardiness and endurance.\",\"Traits\":[\"Ability Score Increase: Wisdom +1\",\"Dwarven Toughness: Bonus hit point maximum and additional hit points per level.\"],\"Image\":\"./Dwarf-5e.png\"}}},\"Gnome\":{\"Description\":\"Small, inventive, and curious humanoids with a love for tinkering.\",\"Traits\":[\"Ability Score Increase: Intelligence +2\",\"Gnome Cunning: Advantage on Intelligence, Wisdom, and Charisma saving throws against magic.\"],\"Subraces\":{\"Rock Gnome\":{\"Description\":\"Rock gnomes are known for their technological aptitude.\",\"Traits\":[\"Ability Score Increase: Constitution +1\",\"Artificer’s Lore: Bonus to History checks related to magic items and devices.\",\"Tinker: Proficient with artisan’s tools (tinker’s tools) and can create small clockwork devices.\"],\"Image\":\"./Gnome-5e.png\"}}},\"Half-Elf\":{\"Description\":\"A mix of human and elf heritage, possessing qualities of both.\",\"Traits\":[\"Ability Score Increase: Charisma +2, two other ability scores of your choice +1\",\"Fey Ancestry: Advantage on saving throws against being charmed, can\\'t be put to sleep.\",\"Skill Versatility: Proficiency in two skills of your choice.\"],\"Image\":\"./Half-elf_5e.png\"},\"Half-Orc\":{\"Description\":\"A hybrid of human and orc, combining strength and endurance.\",\"Traits\":[\"Ability Score Increase: Strength +2, Constitution +1\",\"Menacing: Proficiency in the Intimidation skill.\",\"Relentless Endurance: Can drop to 1 hit point instead of being reduced to 0 hit points.\"],\"Image\":\"./Half-orc-5e.png\"},\"Halfling\":{\"Description\":\"Small, nimble, and cheerful humanoids with a love for peace and comfort.\",\"Traits\":[\"Ability Score Increase: Dexterity +2\",\"Lucky: Reroll a 1 on an attack roll, ability check, or saving throw.\",\"Halfling Nimbleness: Can move through the space of any creature larger.\"],\"Subraces\":{\"Lightfoot\":{\"Description\":\"Lightfoot halflings are more affable and prone to wanderlust.\",\"Traits\":[\"Ability Score Increase: Charisma +1\",\"Naturally Stealthy: Can attempt to hide even when obscured by a creature at least one size larger.\"],\"Image\":\"./Halfling-5e.png\"}}},\"Human\":{\"Description\":\"Adaptable and ambitious humanoids with a diverse range of abilities.\",\"Traits\":[\"Ability Score Increase: All ability scores +1\"],\"Image\":\"./Human-5e.png\"},\"Sun Elf\":{\"Description\":\"High elves with a special affinity for the sun and magic.\",\"Traits\":[\"Ability Score Increase: Intelligence +1\",\"Elf Weapon Training: Proficiency with longsword, shortsword, shortbow, and longbow.\",\"Cantrip: Know one cantrip from the wizard spell list.\"],\"Image\":\"./Sun_elf-5e.png\"},\"Tiefling\":{\"Description\":\"Descendants of infernal beings, bearing demonic features.\",\"Traits\":[\"Ability Score Increase: Intelligence +1, Charisma +2\",\"Hellish Resistance: Resistance to fire damage.\",\"Infernal Legacy: Know the thaumaturgy cantrip and can cast hellish rebuke and darkness once per day.\"],\"Image\":\"./Tiefling_5e.png\"}}}');\n\n//# sourceURL=webpack://final-project-20gbrown/./components/data/4210_Final_Project/races.json?");
+eval("module.exports = JSON.parse('{\"Races\":{\"Dragonborn\":{\"Description\":\"Proud and honorable dragon-like humanoids.\",\"Traits\":[\"Ability Score Increase: Strength +2, Charisma +1\",\"Draconic Ancestry: Breath weapon and damage resistance based on dragon type.\",\"Breath Weapon: Exhale destructive energy in a 5 by 30 ft. line.\"]},\"Dwarf\":{\"Description\":\"Short and stout humanoids with a strong affinity for craftsmanship.\",\"Traits\":[\"Ability Score Increase: Constitution +2\",\"Dwarven Resilience: Advantage on saving throws against poison, resistance to poison damage.\",\"Stonecunning: Proficient in History checks related to stonework.\"],\"Image\":\"img/Dwarf-5e.png\",\"Subraces\":{\"Hill Dwarf\":{\"Description\":\"Hill dwarves are known for their hardiness and endurance.\",\"Traits\":[\"Ability Score Increase: Wisdom +1\",\"Dwarven Toughness: Bonus hit point maximum and additional hit points per level.\"]}}},\"Gnome\":{\"Description\":\"Small, inventive, and curious humanoids with a love for tinkering.\",\"Traits\":[\"Ability Score Increase: Intelligence +2\",\"Gnome Cunning: Advantage on Intelligence, Wisdom, and Charisma saving throws against magic.\"],\"Image\":\"img/Gnome-5e.png\",\"Subraces\":{\"Rock Gnome\":{\"Description\":\"Rock gnomes are known for their technological aptitude.\",\"Traits\":[\"Ability Score Increase: Constitution +1\",\"Artificer’s Lore: Bonus to History checks related to magic items and devices.\",\"Tinker: Proficient with artisan’s tools (tinker’s tools) and can create small clockwork devices.\"]}}},\"Half-Elf\":{\"Description\":\"A mix of human and elf heritage, possessing qualities of both.\",\"Traits\":[\"Ability Score Increase: Charisma +2, two other ability scores of your choice +1\",\"Fey Ancestry: Advantage on saving throws against being charmed, can\\'t be put to sleep.\",\"Skill Versatility: Proficiency in two skills of your choice.\"],\"Image\":\"img/Half-elf_5e.png\"},\"Half-Orc\":{\"Description\":\"A hybrid of human and orc, combining strength and endurance.\",\"Traits\":[\"Ability Score Increase: Strength +2, Constitution +1\",\"Menacing: Proficiency in the Intimidation skill.\",\"Relentless Endurance: Can drop to 1 hit point instead of being reduced to 0 hit points.\"],\"Image\":\"img/Half-orc-5e.png\"},\"Halfling\":{\"Description\":\"Small, nimble, and cheerful humanoids with a love for peace and comfort.\",\"Traits\":[\"Ability Score Increase: Dexterity +2\",\"Lucky: Reroll a 1 on an attack roll, ability check, or saving throw.\",\"Halfling Nimbleness: Can move through the space of any creature larger.\"],\"Subraces\":{\"Lightfoot\":{\"Description\":\"Lightfoot halflings are more affable and prone to wanderlust.\",\"Traits\":[\"Ability Score Increase: Charisma +1\",\"Naturally Stealthy: Can attempt to hide even when obscured by a creature at least one size larger.\"],\"Image\":\"img/Halfling-5e.png\"}}},\"Human\":{\"Description\":\"Adaptable and ambitious humanoids with a diverse range of abilities.\",\"Traits\":[\"Ability Score Increase: All ability scores +1\"],\"Image\":\"img/Human-5e.png\"},\"Sun Elf\":{\"Description\":\"High elves with a special affinity for the sun and magic.\",\"Traits\":[\"Ability Score Increase: Intelligence +1\",\"Elf Weapon Training: Proficiency with longsword, shortsword, shortbow, and longbow.\",\"Cantrip: Know one cantrip from the wizard spell list.\"],\"Image\":\"img/Sun_elf-5e.png\"},\"Tiefling\":{\"Description\":\"Descendants of infernal beings, bearing demonic features.\",\"Traits\":[\"Ability Score Increase: Intelligence +1, Charisma +2\",\"Hellish Resistance: Resistance to fire damage.\",\"Infernal Legacy: Know the thaumaturgy cantrip and can cast hellish rebuke and darkness once per day.\"],\"Image\":\"img/Tiefling_5e.png\"}}}');\n\n//# sourceURL=webpack://final-project-20gbrown/./components/data/4210_Final_Project/races.json?");
 
 /***/ })
 
