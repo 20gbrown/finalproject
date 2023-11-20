@@ -8,7 +8,7 @@ const Races = () => {
         <div key={raceName}>
           <h2>{raceName}</h2>
           {raceInfo.Image && (
-            <Image src={require(`../public/img/${raceInfo.Image}`).default} alt={`${raceName} Race`} />
+            <RaceImages src={raceInfo.Image} alt={`${raceName} Race`} />
           )}
         <p>{raceInfo.Description}</p>
         <h3>Traits</h3>
@@ -26,7 +26,7 @@ const Races = () => {
                 <div key={subraceName}>
                   <h4>{subraceName}</h4>
                   {subraceInfo.Image && (
-                    <img src={require(`../public/img/${subraceInfo.Image}`)} alt={`${subraceName} Subrace`} />
+                    <RaceImages src={subraceInfo.Image}  alt={`${subraceName} Subrace`} />
                   )}
                   <p>{subraceInfo.Description}</p>
                   <h5>Traits</h5>
