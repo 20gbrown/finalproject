@@ -2,51 +2,63 @@
     "classes": {
       "barbarian": {
         "name": "Barbarian",
-        "description": "Masters of rage, the barbarians unleash their primal fury on the battlefield."
+        "description": "Masters of rage, the barbarians unleash their primal fury on the battlefield.",
+        "Image": "img/Barbarian.png"
       },
       "bard": {
         "name": "Bard",
-        "description": "Versatile performers and spellcasters, bards weave magic through their music and charm."
+        "description": "Versatile performers and spellcasters, bards weave magic through their music and charm.",
+        "Image": "img/Bard.png"
       },
       "cleric": {
         "name": "Cleric",
-        "description": "Divine servants and healers, clerics draw power from their chosen deity to aid allies and smite foes."
+        "description": "Divine servants and healers, clerics draw power from their chosen deity to aid allies and smite foes.",
+        "Image": "img/Cleric.png"
       },
       "druid": {
         "name": "Druid",
-        "description": "Guardians of nature, druids commune with the elements and shape-shift into powerful beasts."
+        "description": "Guardians of nature, druids commune with the elements and shape-shift into powerful beasts.",
+        "Image": "img/Druid.png"
       },
       "fighter": {
         "name": "Fighter",
-        "description": "Masters of combat, fighters excel in martial prowess and adaptability."
+        "description": "Masters of combat, fighters excel in martial prowess and adaptability.",
+        "Image": "img/Fighter.png"
       },
       "monk": {
         "name": "Monk",
-        "description": "Disciplined warriors, monks harness their inner energy for unparalleled speed and agility."
+        "description": "Disciplined warriors, monks harness their inner energy for unparalleled speed and agility.",
+        "Image": "img/Monk.png"
       },
       "paladin": {
         "name": "Paladin",
-        "description": "Holy knights, paladins combine martial skill with divine magic to uphold justice."
+        "description": "Holy knights, paladins combine martial skill with divine magic to uphold justice.",
+        "Image": "img/Paladin.png"
       },
       "ranger": {
         "name": "Ranger",
-        "description": "Skilled trackers and survivalists, rangers excel in both archery and wilderness lore."
+        "description": "Skilled trackers and survivalists, rangers excel in both archery and wilderness lore.",
+        "Image": "img/Ranger.png"
       },
       "rogue": {
-        "name": "Rogue",
-        "description": "Masters of stealth and cunning, rogues are skilled infiltrators and deadly assassins."
+        "name": "Rouge",
+        "description": "Masters of stealth and cunning, rogues are skilled infiltrators and deadly assassins.",
+        "Image": "img/Rouge.png"
       },
       "sorcerer": {
         "name": "Sorcerer",
-        "description": "Innate spellcasters, sorcerers wield magical power flowing through their bloodline."
+        "description": "Innate spellcasters, sorcerers wield magical power flowing through their bloodline.",
+        "Image": "img/Sorcerer.png"
       },
       "warlock": {
         "name": "Warlock",
-        "description": "Pact-bound spellcasters, warlocks forge mysterious deals for otherworldly powers."
+        "description": "Pact-bound spellcasters, warlocks forge mysterious deals for otherworldly powers.",
+        "Image": "img/Warlock.png"
       },
       "wizard": {
         "name": "Wizard",
-        "description": "Arcane scholars, wizards study ancient tomes to command the forces of magic."
+        "description": "Arcane scholars, wizards study ancient tomes to command the forces of magic.",
+        "Image": "img/Wizard.png"
       }
     }
   }

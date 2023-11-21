@@ -1,6 +1,8 @@
+//Races.js
 import React from 'react';
 import racesData from '../components/data/4210_Final_Project/races.json';
 import RaceImages from './RaceImages';
+//import './style.css'
 
 const Races = () => {
     const renderRace = (raceName, raceInfo) => {
@@ -46,7 +48,7 @@ const Races = () => {
   
 
   return (
-    <div>
+    <div className="races-container">
       <h1>Races</h1>
       {Object.keys(racesData.Races).map((raceName) => {
         const raceInfo = racesData.Races[raceName];

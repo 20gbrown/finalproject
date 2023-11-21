@@ -12,6 +12,7 @@ const classMapping = {
 };
 
 
+
 const QuizBank = [
     {
       question: "What's your preferred playstyle?",

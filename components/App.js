@@ -8,6 +8,7 @@ import Classes from './Classes';
 import Races from './Races';
 import NotFound from "./NotFound"
 import LegalFooter from './LegalFooter';
+import Auth from './Auth/Auth.js'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
+            <li><Link to="/auth">Login / Register</Link></li>
             <li><Link to="/faq">FAQ</Link></li>
             <li><Link to="/quiz">Quiz</Link></li>
             <li><Link to="/classes">Classes</Link></li>
@@ -27,6 +29,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="/faq" element={<FAQ />} />
           {/* Provide an element or component prop for the /quiz route */}
           <Route path="/quiz" element={<Quiz />} />

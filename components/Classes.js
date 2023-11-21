@@ -1,5 +1,7 @@
+//Classes.js
 import React from 'react';
 import classData from '../components/data/4210_Final_Project/classes.json';
+import ClassImages from './ClassImages';
 
 const Classes = () => {
   return (
@@ -11,6 +13,10 @@ const Classes = () => {
           return (
             <div key={className} className="class-item">
               <h2>{classInfo.name}</h2>
+              {classInfo.Image && (
+                <ClassImages src={classInfo.Image} alt={`${classInfo.name} Class`}
+                />
+              )}
               <p>{classInfo.description}</p>
             </div>
           );
@@ -21,5 +27,6 @@ const Classes = () => {
 };
 
 export default Classes;
+
 
 

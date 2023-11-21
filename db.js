@@ -1,5 +1,12 @@
+//db.js
 const mongoose = require('mongoose');
-const { MONGO_URI } = require('./config/config'); 
+const session = require('express-session');
+//const connectMongo = require('connect-mongo');
+const passportLocal = require('passport-local');
+
+const MongoStore = require('connect-mongo');
+
+const { MONGO_URI } = require('./config/config');
 
 const connectDB = async () => {
   try {
@@ -15,3 +22,7 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+
+
+
+

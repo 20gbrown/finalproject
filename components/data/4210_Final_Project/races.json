@@ -7,7 +7,7 @@
           "Draconic Ancestry: Breath weapon and damage resistance based on dragon type.",
           "Breath Weapon: Exhale destructive energy in a 5 by 30 ft. line."
         ],
-        "Image": "img/Dwarf-5e.png"
+        "Image": "img/Dragonborn-5e.png"
         
       },
       "Dwarf": {
@@ -25,7 +25,7 @@
               "Ability Score Increase: Wisdom +1",
               "Dwarven Toughness: Bonus hit point maximum and additional hit points per level."
             ],
-            "Image": "img/Dwarf-5e.png"
+            "Image": "img/Hill-Dwarf.jpg"
           }
         }
       },
@@ -44,7 +44,7 @@
               "Artificer’s Lore: Bonus to History checks related to magic items and devices.",
               "Tinker: Proficient with artisan’s tools (tinker’s tools) and can create small clockwork devices."
             ],
-            "Image": "img/Dwarf-5e.png"
+            "Image": "img/Clockworkbeholder.png"
           }
         }
       },
@@ -73,7 +73,7 @@
           "Lucky: Reroll a 1 on an attack roll, ability check, or saving throw.",
           "Halfling Nimbleness: Can move through the space of any creature larger."
         ],
-        "Image": "img/Dwarf-5e.png",
+        "Image": "img/Halfling-5e.png",
         "Subraces": {
           "Lightfoot": {
             "Description": "Lightfoot halflings are more affable and prone to wanderlust.",
@@ -81,7 +81,7 @@
               "Ability Score Increase: Charisma +1",
               "Naturally Stealthy: Can attempt to hide even when obscured by a creature at least one size larger."
             ],
-            "Image": "img/Halfling-5e.png"
+            "Image": "img/LightfootHalfling.png"
           }
         }
       },

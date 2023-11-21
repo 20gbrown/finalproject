@@ -1,4 +1,4 @@
-// models/quizResult.js
+/*/ models/quizResult.js
 const mongoose = require('mongoose');
 
 const quizResultSchema = new mongoose.Schema({
@@ -14,4 +14,14 @@ const quizResultSchema = new mongoose.Schema({
 
 const QuizResult = mongoose.model('QuizResult', quizResultSchema);
 
-module.exports = QuizResult;
+module.exports = QuizResult;*/
+
+// models/quizAnswer.js
+const mongoose = require('mongoose');
+
+const quizAnswerSchema = new mongoose.Schema({
+  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  answers: { type: Object, required: true },
+});
+
+module.exports = mongoose.model('QuizAnswer', quizAnswerSchema);

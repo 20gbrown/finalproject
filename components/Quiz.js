@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { QuizBank, classMapping } from '../utils/quizData';
 import { determinePreferredClassWeighted } from '../utils/quizFunctions';
+import axios from 'axios';
 
 const Quiz = () => {
   const [questionIndex, setQuestionIndex] = useState(0);
@@ -22,6 +23,15 @@ const Quiz = () => {
       const preferredClass = determinePreferredClassWeighted(userResponses, classMapping);
       console.log(`Your preferred DnD class using weighted mapping is: ${preferredClass}`);
       setPreferredClass(preferredClass);
+
+      // Save answers to the server
+      axios.post('/api/quiz/save-answers', { answers: userResponses })
+      .then(response => {
+        console.log(response.data.message);
+      })
+      .catch(error => {
+        console.error(error.response.data.message);
+      });
     }
   };
 
@@ -32,10 +42,10 @@ const Quiz = () => {
   }, [preferredClass]);
 
   return (
-    <div>
+    <div className='quiz-main'>
       <h1>Dungeons and Dragons Personality Quiz</h1>
       {questionIndex < QuizBank.length && (
-        <div key={QuizBank[questionIndex].id}>
+        <div key={QuizBank[questionIndex].id} className ='quiz-questions'>
           <h3>{QuizBank[questionIndex].question}</h3>
           {QuizBank[questionIndex].answers.map((answer) => (
             <label key={answer.option}>
@@ -50,13 +60,16 @@ const Quiz = () => {
           ))}
         </div>
       )}
+      <div className='quiz-answer'>
       {preferredClass && (
         <p>Your preferred DnD class using weighted mapping is: {preferredClass}</p>
       )}
+      </div>
     </div>
   );
 };
 
 export default Quiz;
+
 
 
