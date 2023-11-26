@@ -9,10 +9,12 @@ import Races from './Races';
 import NotFound from "./NotFound"
 import LegalFooter from './LegalFooter';
 import Auth from './Auth/Auth.js'
+import { AuthProvider } from './Auth/AuthContext.js';
 
 const App = () => {
   return (
     <Router>
+      <AuthProvider>
       <div>
         <nav>
           <ul>
@@ -29,7 +31,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/auth" element={<Auth />} />
+          <Route path="/auth/*" element={<Auth />} />
           <Route path="/faq" element={<FAQ />} />
           {/* Provide an element or component prop for the /quiz route */}
           <Route path="/quiz" element={<Quiz />} />
@@ -41,6 +43,7 @@ const App = () => {
 
         <LegalFooter />
       </div>
+      </AuthProvider>
     </Router>
   );
 };

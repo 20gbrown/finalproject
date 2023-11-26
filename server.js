@@ -1,3 +1,5 @@
+//server.js
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const connectDB = require('./db');
@@ -37,9 +39,9 @@ app.use(
     secret: 'd12102001',
     resave: true,
     saveUninitialized: true,
-    store: new MongoStore({
-      url: MONGO_URI, // Use the MongoDB URI from config.js
-      mongooseConnection: mongoose.connection, // assuming you already have this mongoose connection
+    store: MongoStore.create({
+      mongoUrl: MONGO_URI, // Use the MongoDB URI from config.js
+      mongooseConnection: mongoose, // assuming you already have this mongoose connection
     }),
   })
 );
