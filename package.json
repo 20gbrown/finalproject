@@ -4,7 +4,7 @@
   "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/SHHB_kJA) # [Name]\r ## [Assignment #]\r ## [Submission date: MM/DD/YY]\r ## Worked with/sources \r * example\r * example\r * example\r * example\r ## Project Quirks/ Things that don't work\r * example\r * example\r * example",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    
     "start": "node server.js"
   },
   "keywords": [],
