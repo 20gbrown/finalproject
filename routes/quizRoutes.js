@@ -1,31 +1,45 @@
+//quizRoutes.js
 const express = require('express');
 const mongoose = require('mongoose');
 const quizResult = require('../models/quizResult');
 const router = express.Router();
 
-// Check if the model already exists
+/*
 const QuizAnswer = mongoose.models.QuizAnswer || mongoose.model('QuizAnswer', new mongoose.Schema({
   user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
   answers: { type: Object, required: true },
+}));*/
+
+const QuizResult= mongoose.models.QuizResult || mongoose.model('QuizResult', new mongoose.Schema({
+  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  result: { type: String, required: true },
 }));
 
-// Save quiz answers
-router.post('/save-answers', async (req, res) => {
+router.post('/save-results', async (req, res) => {
   try {
-    const { answers } = req.body;
-    // Ensure the user is authenticated before saving answers
+    const { result } = req.body;
     if (!req.isAuthenticated()) {
       return res.status(401).json({ success: false, message: 'Unauthorized' });
     }
 
-    const quizAnswer = new QuizAnswer({
+    const quizResult = new QuizResult({
       user: req.user._id,
-      answers,
+      result,
     });
 
-    await quizAnswer.save();
+    await quizResult.save();
 
-    res.json({ success: true, message: 'Quiz answers saved successfully' });
+    res.json({ success: true, message: 'Quiz results saved successfully' });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+});
+
+router.get('/quiz-results/:userId', async (req, res) => {
+  try {
+    const userId = req.params.userId;
+    const results = await QuizResult.find({ user: userId });
+    res.json(results);
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }

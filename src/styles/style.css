@@ -102,11 +102,12 @@ body {
   
   /* Races component */
   .races-container {
-    background-color: #777;
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
     flex: 1;
+    color: white;
+    background-color: rgb(230, 217, 217);
   }
   
   .races-container h1 {
@@ -148,6 +149,25 @@ body {
   .races-container li {
     color: #555;
     margin-top: 5px;
+  }
+
+  .races-name h2{
+    color: #b41b1b;
+  }
+
+  .races-subrace h4 {
+    color: #b41b1b;
+  }
+
+  .races-subraces h3 {
+    color: white;
+  }
+
+  .races-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px;
   }
 
   .quiz-main {
@@ -197,6 +217,7 @@ body {
     border-top: 1px solid #ddd;
     text-align: center;
     margin-top: auto;
+    color: #333;
   }
   
   .legal-footer h2 {
@@ -214,3 +235,194 @@ body {
     font-size: 0.9rem;
     margin-bottom: 5px;
   }
+
+  /* Auth.css */
+
+/* Style for the entire authentication section */
+.auth-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Style for login and register forms */
+.login-container {
+  margin-top: 20px;
+}
+
+/* Style for form labels */
+.login-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Style for form inputs */
+.login-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+/* Style for form buttons */
+.login-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+.registration-container {
+  margin-top: 20px;
+}
+
+/* Style for form labels */
+.registration-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Style for form inputs */
+.registration-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.registration-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.registration-button:hover {
+  background-color: #45a049;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgb(230, 217, 217);
+}
+
+.faq-container h2 {
+  color: #333;
+}
+
+.faq-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-container li {
+  margin-bottom: 20px;
+}
+
+.faq-container strong {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #b41b1b;
+}
+
+.faq-container p {
+  margin: 0;
+  color: #555;
+}
+
+.featured-links .featured-link {
+  display: block;
+  margin-bottom: 10px; 
+}
+
+.home-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(230, 217, 217);
+  box-sizing: border-box;
+}
+
+.home-container h1 {
+  color: #b41b1b;
+  font-size: 2.5em;
+}
+.home-container p{
+  color: #333;
+  font-size: 1.2em;
+}
+
+/* Style for hero section */
+.hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for other sections */
+.about-section,
+.featured-content,
+.user-greeting {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.featured-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+}
+
+.featured-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.featured-link:hover {
+  background-color: #0056b3;
+}
+
+.featured-content h2 {
+  color: #555;
+}
+
+.user-greeting h2{
+  color: #555;
+}
+.user-greeting p {
+  color: #333;
+}
+
+.about-section h2{
+  color: #555;
+}
+.about-section p {
+  color: #333;
+}

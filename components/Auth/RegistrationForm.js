@@ -12,16 +12,24 @@ const RegistrationForm = ({ handleRegistration }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form className="registration-container" onSubmit={handleSubmit}>
+      <label className='registration-label'>
         Username:
-        <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+        <input 
+        className='registration-input'
+        type="text" 
+        value={username} 
+        onChange={(e) => setUsername(e.target.value)} />
       </label>
       <label>
         Password:
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input 
+        className='registration-input'
+        type="password" 
+        value={password} 
+        onChange={(e) => setPassword(e.target.value)} />
       </label>
-      <button type="submit">Register</button>
+      <button className='registration-button' type="submit">Register</button>
     </form>
   );
 };

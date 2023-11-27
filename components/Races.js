@@ -7,7 +7,7 @@ import RaceImages from './RaceImages';
 const Races = () => {
     const renderRace = (raceName, raceInfo) => {
       return (
-        <div key={raceName}>
+        <div className='races-name' key={raceName}>
           <h2>{raceName}</h2>
           {raceInfo.Image && (
             <RaceImages src={raceInfo.Image} alt={`${raceName} Race`} />
@@ -20,12 +20,12 @@ const Races = () => {
           ))}
         </ul>
         {raceInfo.Subraces && (
-          <div>
+          <div className='races-subraces'>
             <h3>Subraces</h3>
             {Object.keys(raceInfo.Subraces).map((subraceName) => {
               const subraceInfo = raceInfo.Subraces[subraceName];
               return (
-                <div key={subraceName}>
+                <div  className='races-subrace' key={subraceName}>
                   <h4>{subraceName}</h4>
                   {subraceInfo.Image && (
                     <RaceImages src={subraceInfo.Image}  alt={`${subraceName} Subrace`} />

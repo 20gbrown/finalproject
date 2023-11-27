@@ -12,16 +12,24 @@ const LoginForm = ({ handleLogin }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form className='login-container' onSubmit={handleSubmit}>
+      <label className='login-label'>
         Username:
-        <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+        <input 
+        className='login-input'
+        type="text" 
+        value={username} 
+        onChange={(e) => setUsername(e.target.value)} />
       </label>
-      <label>
+      <label className='login-label'>
         Password:
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input 
+        className='login-input'
+        type="password" 
+        value={password} 
+        onChange={(e) => setPassword(e.target.value)} />
       </label>
-      <button type="submit">Login</button>
+      <button className='login-button' type="submit">Login</button>
     </form>
   );
 };

@@ -10,6 +10,7 @@ import NotFound from "./NotFound"
 import LegalFooter from './LegalFooter';
 import Auth from './Auth/Auth.js'
 import { AuthProvider } from './Auth/AuthContext.js';
+import QuizResults from './QuizResults';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <li><Link to="/quiz">Quiz</Link></li>
             <li><Link to="/classes">Classes</Link></li>
             <li><Link to="/races">Races</Link></li>
+            <li><Link to='/account'>Account</Link></li>
           </ul>
         </nav>
 
@@ -33,12 +35,11 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/auth/*" element={<Auth />} />
           <Route path="/faq" element={<FAQ />} />
-          {/* Provide an element or component prop for the /quiz route */}
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/classes" element={<Classes />} />
           <Route path="/races" element={<Races />} />
-          {/* Add a catch-all route for not found */}
           <Route path="/*" element={<NotFound />} />
+          <Route path="/account" element={<QuizResults />} />
         </Routes>
 
         <LegalFooter />

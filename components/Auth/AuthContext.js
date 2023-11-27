@@ -1,29 +1,55 @@
 // AuthContext.js
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import axios from 'axios';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [authenticated, setAuthenticated] = useState(false);
-  const [username, setUsername] = useState('');
+  const [user, setUser] = useState({ id: '', username: '' });
+  const [loading, setLoading] = useState(true);
 
-  const login = (username) => {
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const response = await axios.get('/api/user');
+        const userData = response.data;
+        setAuthenticated(true);
+        setUser(userData);
+      } catch (error) {
+        console.error('Error fetching user:', error);
+        setAuthenticated(false);
+        setUser({ id: '', username: '' });
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchUser();
+  }, []); // Empty dependency array to run only once when the component mounts
+
+  const login = (userData) => {
     // Perform your authentication logic (e.g., set tokens, sessions)
     setAuthenticated(true);
-    setUsername(username);
+    setUser(userData);
   };
 
-  const logout = () => {
+  const logout = async () => {
     // Perform logout logic (e.g., clear tokens, sessions)
-    setAuthenticated(false);
-    setUsername('');
+    try {
+      await axios.post('/api/auth/logout');
+      setAuthenticated(false);
+      setUser({ id: '', username: '' });
+    } catch (error) {
+      console.error('Error during logout:', error);
+    }
   };
 
   return (
-    <AuthContext.Provider value={{ authenticated, username, login, logout }}>
+    <AuthContext.Provider value={{ authenticated, user, login, logout, loading }}>
       {children}
     </AuthContext.Provider>
   );
 };
 
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = () => useContext(AuthContext)

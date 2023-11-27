@@ -4,9 +4,11 @@ import { Route, Link, useNavigate, useRoutes, Routes} from 'react-router-dom';
 import LoginForm from './LoginForm';
 import RegistrationForm from './RegistrationForm';
 import axios from 'axios'; // Import axios for HTTP requests
+import {useAuth} from './AuthContext';
 
 const Auth = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   // Handle Registration
   const handleRegistration = (username, password) => {
@@ -21,21 +23,35 @@ const Auth = () => {
       });
   };
 
-  // Handle Login
   const handleLogin = (username, password) => {
     axios.post('/api/auth/login', { username, password })
       .then(response => {
-        console.log(response.data.message);
-        navigate('/');
+        console.log('Server Response:', response);
+  
+        if (response && response.data && response.data.message) {
+          console.log(response.data.message);
+          const userData = response.data.user;
+          login(userData);
+          navigate('/');
+        } else {
+          console.error('Unexpected response format:', response);
+        }
       })
       .catch(error => {
-        console.error(error.response.data.message);
+        console.error('Error during login:', error);
+  
+        if (error.response && error.response.data && error.response.data.message) {
+          console.error(error.response.data.message);
+        } else {
+          console.error('Unexpected error format:', error);
+        }
+  
         // Handle login failure (display error message, etc.)
       });
   };
 
   return (
-    <div>
+    <div className="auth-container">
       <h1>Authentication</h1>
       <nav>
         <ul>

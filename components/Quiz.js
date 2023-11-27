@@ -3,35 +3,43 @@ import React, { useState, useEffect } from 'react';
 import { QuizBank, classMapping } from '../utils/quizData';
 import { determinePreferredClassWeighted } from '../utils/quizFunctions';
 import axios from 'axios';
+//import QuizResult from '../models/quizResult';
 
 const Quiz = () => {
   const [questionIndex, setQuestionIndex] = useState(0);
   const [userResponses, setUserResponses] = useState({});
   const [preferredClass, setPreferredClass] = useState(null);
+  const [userId, setUserId] = useState(null);
+
+  useEffect(() => {
+    const fetchUserId = async () => {
+      const response = await axios.get('/api/user');
+      setUserId(response.data.userId); 
+    };
+
+    fetchUserId();
+  }, []); 
 
   const handleAnswer = (answerOption) => {
     setUserResponses((prevResponses) => ({
       ...prevResponses,
       [questionIndex]: answerOption,
     }));
-
-    // Move to the next question
     if (questionIndex < QuizBank.length - 1) {
       setQuestionIndex(questionIndex + 1);
     } else {
-      // End of the quiz, calculate preferred class
       const preferredClass = determinePreferredClassWeighted(userResponses, classMapping);
       console.log(`Your preferred DnD class using weighted mapping is: ${preferredClass}`);
       setPreferredClass(preferredClass);
-
-      // Save answers to the server
-      axios.post('/api/quiz/save-answers', { answers: userResponses })
-      .then(response => {
-        console.log(response.data.message);
-      })
-      .catch(error => {
-        console.error(error.response.data.message);
-      });
+      if (userId) {
+        axios.post('/api/quiz/save-results', { result: preferredClass, userId })
+          .then(response => {
+            console.log(response.data.message);
+          })
+          .catch(error => {
+            console.error(error.response.data.message);
+          });
+      }
     }
   };
 
@@ -62,7 +70,7 @@ const Quiz = () => {
       )}
       <div className='quiz-answer'>
       {preferredClass && (
-        <p>Your preferred DnD class using weighted mapping is: {preferredClass}</p>
+        <p>Your preferred DnD class is: {preferredClass}</p>
       )}
       </div>
     </div>

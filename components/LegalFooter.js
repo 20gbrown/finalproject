@@ -6,7 +6,6 @@ const LegalFooter = () => {
   const [legalInfo, setLegalInfo] = useState(null);
 
   useEffect(() => {
-    // Use the imported JSON directly
     setLegalInfo(legalInfoJson);
   }, []);
 

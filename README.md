@@ -1,13 +1,8 @@
 
 # [Gage Brown]
 ## [Final Project]
-## [Submission date: MM/DD/YY]
+## [Submission date: 11/26/2023]
 ## Worked with/sources 
-* example
-* example
-* example
-* example
+* https://www.bezkoder.com/react-node-mongodb-auth/
 ## Project Quirks/ Things that don't work
-* example
-* example
-* example
+* Quizresults are not being saved

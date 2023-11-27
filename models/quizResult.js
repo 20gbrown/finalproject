@@ -1,22 +1,15 @@
-/*/ models/quizResult.js
+// models/quizResult.js
 const mongoose = require('mongoose');
 
 const quizResultSchema = new mongoose.Schema({
-  userId: {
-    type: String,
-    required: true,
-  },
-  preferredClass: {
-    type: String,
-    required: true,
-  },
+  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  result: { type: String, required: true }, 
 });
 
-const QuizResult = mongoose.model('QuizResult', quizResultSchema);
+module.exports = mongoose.model('QuizResult', quizResultSchema);
 
-module.exports = QuizResult;*/
 
-// models/quizAnswer.js
+/* models/quizResult.js
 const mongoose = require('mongoose');
 
 const quizAnswerSchema = new mongoose.Schema({
@@ -25,3 +18,4 @@ const quizAnswerSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('QuizAnswer', quizAnswerSchema);
+*/
