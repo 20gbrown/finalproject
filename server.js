@@ -16,7 +16,7 @@ const mongoose = require('mongoose');
 const QuizResult = require('./models/quizResult');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
